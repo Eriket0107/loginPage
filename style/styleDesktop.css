@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Work+Sans&display=swap');
+.invalid, #emailError{
+    color: red !important;
+    border-color: red !important;
+}
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.305);
+     
+}
+@media only screen and (min-width : 415px) {
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        
+        display: flex;
+    }
+    #img-bg{
+        position: fixed;
+        height: 100vh;
+        width: 120vw;
+        z-index: -1;
+        margin-top: 1rem;
+    }
+    #main {
+        height: 100vh;
+        width: 40vw;
+        background-color: #4E5BEE;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+   
+    #landing {
+        box-sizing: border-box;
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img {
+        margin-bottom: 3rem;
+        transform: scale(1.5);
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-field {
+        color: white;
+        box-sizing: border-box;
+        height: 3.5rem;
+        width: 20rem;
+        border: 3px solid white;
+        border-radius: 4em;
+        background-color: #4E5BEE;
+        padding: 1rem;
+        margin: 0.75rem;
+
+    }
+    .input-field:focus {
+
+        outline-style: none;
+        /*MUITO IMPORTANTE SABER*/
+        transition: 0.3s;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.606);
+    }
+    #password-input::placeholder{
+        background-repeat: no-repeat;
+        background-position:right;
+        background-size: 1.2vh auto;
+        background-image:url('../imgs/lock_24px.png') ;
+    }
+    #email-input::placeholder{
+        background-repeat: no-repeat;
+        background-position:right;
+        background-size: 1.2vh auto;
+        background-image:url('../imgs/Subtract.png') ;
+    }
+    #enter-btn {
+        background-color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #565656;
+        height: 3.5rem;
+        width: 20rem;
+        border-radius: 4em;
+        border: 0;
+    }
+
+    #enter-btn:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.551);
+        transition: 0.35s;
+        transform: scale(1.03);
+        /* box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.606); */
+    }
+
+    footer {
+        color: white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    footer span {
+        text-decoration: underline;
+    }
+
+    footer a {
+        color: white;
+        text-transform: none;
+    }
+}
